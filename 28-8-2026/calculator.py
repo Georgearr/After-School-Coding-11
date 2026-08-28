@@ -22,8 +22,11 @@ elif operation == "*":
     total = x1 * x2
     print(f"Total: {total}")
 elif operation == "/":
-    total = x1 / x2
-    print(f"Total: {total}")
+    if( x2 == 0):
+        print("Error: Pembagian dengan nol tidak diperbolehkan.")
+    else:
+        total = x1 / x2
+        print(f"Total: {total}")
 elif operation == "//":
     total = x1 // x2
     print(f"Total: {total}")
